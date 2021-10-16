@@ -1,2 +1,2 @@
 var el = document.querySelector(".tabs");
-var instance = M.Tabs.init(el, { swipeable: true });
+var instance = M.Tabs.init(el, {});
