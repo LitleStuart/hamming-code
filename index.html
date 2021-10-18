@@ -28,17 +28,25 @@
             <div class="card-content pink lighten-5">
               <div id="encode">
                 <div class="input-field">
-                  <input class="validate" type="text" id="strToEncode" />
+                  <input class="validate" type="text" id="strToEncode" data-length="4" />
                   <label for="strToEncode">String to encode</label>
                 </div>
-                <a class="waves-effect waves-light btn yellow lighten-3 teal-text text-darken-3" style="font-weight: 500;">Encode</a>
+                <div class="input-field">
+                  <input disabled type="text" id="encodedStr" />
+                  <span class="helper-text left-align">Encoded string</span>
+                </div>
+                <a class="waves-effect waves-light btn yellow lighten-3 teal-text text-darken-3" style="font-weight: 500;" id="btnEncode" onclick="encode(strToEncode.value)">Encode</a>
               </div>
               <div id="decode">
                 <div class="input-field">
-                  <input class="validate" type="text" id="strToDecode" />
+                  <input class="validate" type="text" id="strToDecode" value=" "/>
                   <label for="strToDecode">String to decode</label>
                 </div>
-                <a class="waves-effect waves-light btn yellow lighten-3 teal-text text-darken-3" style="font-weight: 500;">Decode</a>
+                <div class="input-field">
+                  <input disabled type="text" id="decodedStr" />
+                  <span class="helper-text left-align">Decoded string</span>
+                </div>
+                <a class="waves-effect waves-light btn yellow lighten-3 teal-text text-darken-3" style="font-weight: 500;" id="btnDecode" onclick="decode(strToDecode.value)">Decode</a>
               </div>
               </div>
             </div>
